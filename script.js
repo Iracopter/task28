@@ -1,4 +1,4 @@
-/*var k=0;
+var k=0;
 
 function changesize(){
 var yourImg = document.getElementById('my_photo');
@@ -15,14 +15,33 @@ if(yourImg && yourImg.style) {
          k--;
     }
 }
-}*/
-
-function changesize(){
-    var yourImg = document.getElementById('my_photo');
-    yourImg.style.height = '374px';
-    yourImg.style.width = '385px';
-
-    var ctx = yourImg.getContext("2d");
-    ctx.strokeRect(20, 20, 150, 100);
-
 }
+
+
+
+document.addEventListener('keydown', function(event) {
+    if (event.key == 'a') {
+      var hiddenElement = document.getElementById("a");
+      hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+    }
+    if (event.key == 'b') {
+        var hiddenElement = document.getElementById("b");
+        hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+    }
+    if (event.key == 'c') {
+        var hiddenElement = document.getElementById("c");
+        hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+    }
+    if (event.key == 'd') {
+        var hiddenElement = document.getElementById("d");
+        hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+    }
+    if (event.key == 'e') {
+        var hiddenElement = document.getElementById("e");
+        hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+    }    
+    if (event.key == 'f') {
+        var hiddenElement = document.getElementById("f");
+        hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+    }    
+  });
