@@ -19,7 +19,7 @@ if(yourImg && yourImg.style) {
 
 
 
-document.addEventListener('keydown', function(event) {
+/*document.addEventListener('keydown', function(event) {
     if (event.key == 'a') {
       var hiddenElement = document.getElementById("a");
       hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
@@ -44,4 +44,11 @@ document.addEventListener('keydown', function(event) {
         var hiddenElement = document.getElementById("f");
         hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
     }    
-  });
+  });*/
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key) {
+      var hiddenElement = document.getElementById(event.key);
+      hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+    }
+});
