@@ -47,8 +47,6 @@ if(yourImg && yourImg.style) {
   });*/
 
   document.addEventListener('keydown', function(event) {
-    if (event.key) {
       var hiddenElement = document.getElementById(event.key);
       hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
-    }
 });
