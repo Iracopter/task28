@@ -1,6 +1,6 @@
 var n=0;
 function changesize() {
-    var image = document.getElementById('my_photo'); // отримуємо елемент зображення за його ідентифікатором
+    var image = document.getElementById('my_photo'); 
     if(n==0){
         image.style.transform = 'scale(1.75)';
         n++;
